@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Citas Médicas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <h1>Programar Citas Médicas</h1>
+
+    <div id="doctors">
+        <h2>Seleccionar Especialista</h2>
+        
+        <ul id="doctor-list">
+            <li><button onclick="showDoctorProfile('Dr. Juan', 'Cardiología', ['09:00', '10:00', '11:00'])">Dr. Juan</button></li>
+            <li><button onclick="showDoctorProfile('Dra. María', 'Pediatría', ['14:00', '15:00', '16:00'])">Dra. María</button></li>
+            <li><button onclick="showDoctorProfile('Dr. Roberto', 'Dermatología', ['10:00', '12:00', '14:00'])">Dr. Roberto</button></li>
+            <li><button onclick="showDoctorProfile('Dra. Laura', 'Ginecología', ['08:00', '10:00', '12:00'])">Dra. Laura</button></li>
+            <li><button onclick="showDoctorProfile('Dr. Carlos', 'Oftalmología', ['13:00', '14:00', '15:00'])">Dr. Carlos</button></li>
+            <li><button onclick="showDoctorProfile('Dra. Ana', 'Psiquiatría', ['11:00', '13:00', '15:00'])">Dra. Ana</button></li>
+            <li><button onclick="showDoctorProfile('Dr. Pedro', 'Traumatología', ['09:00', '10:00', '11:00'])">Dr. Pedro</button></li>
+            <li><button onclick="showDoctorProfile('Dra. Sofia', 'Nutrición', ['14:00', '15:00', '16:00'])">Dra. Sofia</button></li>
+            <li><button onclick="showDoctorProfile('Dr. Antonio', 'Endocrinología', ['12:00', '14:00', '16:00'])">Dr. Antonio</button></li>
+            <li><button onclick="showDoctorProfile('Dra. Carolina', 'Dentista', ['09:00', '11:00', '13:00'])">Dra. Carolina</button></li>
+        </ul>
+   
+    </div>
+  
+   
+    <div id="doctor-profile" style="display: none;">
+        <h2>Perfil del Médico</h2>
+        <p id="doctor-name"></p>
+        <p>Especialidad: <span id="doctor-specialty"></span></p>
+        <p>Horario: <span id="doctor-schedule"></span></p>
+    </div>
+
+    <div id="appointment-form" style="display: none;">
+        <h2>Programar Cita</h2>
+        <label for="date">Fecha:</label>
+        <input type="date" id="date">
+        <br>
+        <label for="time">Hora:</label>
+        <input type="time" id="time">
+        <br>
+        <button onclick="scheduleAppointment()">Programar Cita</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

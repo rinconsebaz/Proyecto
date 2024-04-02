@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(./images/R.jpg) ;
+    width: fill;
+    height: fill;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+h1, h2 {
+    text-align: center;
+}
+
+#doctors {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+#doctor-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Agregamos esta propiedad para que los elementos se envuelvan en múltiples líneas */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+ 
+}
+
+li {
+    margin-bottom: 10px;
+    width: 48%; /* Establecemos un ancho específico para que se dividan en dos columnas */
+}
+
+button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+label {
+    font-weight: bold;
+}
+#doctor-profile, #appointment-form {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center; 
+    background-color: #0056b3;
+    border-radius: 10px;
+}

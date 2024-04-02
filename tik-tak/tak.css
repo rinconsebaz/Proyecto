@@ -1,0 +1,51 @@
+body{
+    font-family: 'Arial', sans-serif;
+    background-image:url(./images/tricky.webp) ;
+    width: fill;
+    height: fill;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    background: black; /* Cambiamos el color de fondo de la celda a negro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: white; /* Cambiamos el color del texto a blanco */
+    cursor: pointer;
+}
+
+.restart-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black; /* Cambiamos el color de fondo del botón a negro */
+    color: white; /* Cambiamos el color del texto del botón a blanco */
+    border: 1px solid white; /* Añadimos un borde blanco al botón */
+    border-radius: 5px; /* Añadimos bordes redondeados al botón */
+}
+
+.restart-btn:hover {
+    background-color: white; /* Cambiamos el color de fondo del botón a blanco al pasar el mouse sobre él */
+    color: black; /* Cambiamos el color del texto del botón a negro al pasar el mouse sobre él */
+}
