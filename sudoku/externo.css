@@ -5,7 +5,7 @@
 
 body{
     text-align: center;
-    background: linear-gradient(20deg, #ff8e00, #fccf3c, #d37d37);
+    background: linear-gradient(20deg, #8b5d97, #e17ebe, #fface2);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@ h1{
     font-weight: 500;
     font-size: 60px;
     color: #141212;
-    text-shadow: 2px 2px 4px rgba(236, 46,46, 0.5);
+    text-shadow: 2px 2px 4px #ef8afc;
 }
 
 .contenedor{
@@ -74,11 +74,11 @@ button{
 }
 
 #btnRendirse{
-    background-color: #6a4d10;
+    background-color: #4c4472;
 }
 
 #btnReiniciar{
-    background-color: #f15a2c;
+    background-color: #ffd232;
 }
 
 #btnRendirse:hover{
